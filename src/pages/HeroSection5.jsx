@@ -44,14 +44,14 @@ const HeroSection5 = () => {
     />
   ));
   return (
-    <div className="  w-10/12 mx-auto flex flex-col lg:gap-y-5 lg:mt-4">
+    <div className=" w-10/12 mx-auto flex flex-col lg:gap-y-5 lg:mt-4">
       <div className=" flex justify-between">
-        <h1 className=" text-3xl  font-bold leading-tight text-gray-900">
+        <h1 className=" lg:text-3xl text-xl py-3 px-4 font-bold leading-tight text-gray-900">
           Read our latest blogs
         </h1>
 
-        <button>
-          vive all <span>&rarr;</span>
+        <button className="lg:text-xl py-1 px-4 bg-red-700 rounded-lg text-white hover:bg-red-900">
+          View all <span>&rarr;</span>
         </button>
       </div>
       <div>

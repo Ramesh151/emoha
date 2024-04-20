@@ -44,7 +44,7 @@ const HeroSection2 = () => {
   return (
     <div className="   mx-auto flex flex-col">
       <div className=" -my-16">
-        <h1 className=" text-4xl text-center text-black font-medium ">
+        <h1 className=" lg:text-4xl text-xl text-start pl-2 lg:text-center text-black font-medium ">
           Help your parents age magnificently with <br /> India's most trusted
           senior care brand
         </h1>

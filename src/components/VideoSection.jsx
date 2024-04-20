@@ -19,16 +19,16 @@ const VideoSection = ({ video, heading, subheading }) => {
         <div className=" absolute bottom-0 z-10">
           <div className=" flex items-end ">
             <div className=" w-3/5 p-3">
-              <h1 className=" text-white text-4xl font-bold text-center pb-3">
+              <h1 className=" text-white lg:text-4xl text-3xl font-bold text-center pb-3 w-full">
                 {heading}
               </h1>
-              <h2 className=" text-white text-lg font-medium pb-3">
+              <h2 className=" text-white text-lg font-medium pb-3 w-full">
                 {subheading}
               </h2>
             </div>
 
-            <div className=" top-0">
-              <button className=" text-2xl bg-white rounded-full px-3 py-2 my-24 mx-11  ">
+            <div className=" top-1 ">
+              <button className=" lg:text-2xl text-xl bg-white lg:rounded-full rounded-lg px-3 py-2 my-24 mx-11 w-10/12  ">
                 Learn More
               </button>
             </div>

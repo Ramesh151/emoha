@@ -1,38 +1,74 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Rounded = () => {
-  const data = [
-    {
-      number: "60000+",
-      name: "Elders Empowered",
-    },
-    {
-      number: "PAN India",
-      name: "Operated",
-    },
-    {
-      number: "500+",
-      name: "Lives Saved",
-    },
-    {
-      number: "4000+",
-      name: "Events Organised",
-    },
-  ];
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
+  const [count3, setCount3] = useState(0);
+  const [count4, setCount4] = useState(0);
+
+  const counter = (id, start, end, duration) => {
+    let current = start;
+    const range = end - start;
+    const increment = end > start ? 1 : -1;
+    const step = Math.abs(Math.floor(duration / range));
+    const timer = setInterval(() => {
+      current += increment;
+      switch (id) {
+        case "count1":
+          setCount1(current);
+          break;
+        case "count2":
+          setCount2(current);
+          break;
+        case "count3":
+          setCount3(current);
+          break;
+        case "count4":
+          setCount4(current);
+          break;
+        default:
+          break;
+      }
+      if (current === end) {
+        clearInterval(timer);
+      }
+    }, step);
+  };
+
+  useEffect(() => {
+    counter("count1", 5000, 6000, 2000);
+    counter("count2", 1500, 2000, 3000);
+    counter("count3", 100, 500, 3000);
+    counter("count4", 3800, 4000, 3000);
+  }, []);
 
   return (
     <>
-      <div className="w-full lg:w-9/12 bg-red-700 lg:rounded-full rounded-2xl lg:flex lg:mx-auto justify-around py-16 lg:px-9 relative bottom-28 grid grid-cols-2 lg:gap-y-2">
-        {data.map((item, index) => (
-          <div className="my-3 text-center" key={index}>
-            <h1 className="text-2xl lg:text-4xl font-bold text-white px-2 py-2">
-              {item.number}
-            </h1>
-            <h2 className="text-xl lg:text-2xl text-white font-normal lg:pt-4">
-              {item.name}
-            </h2>
+      <div className="w-full lg:w-9/12 bg-red-700 lg:rounded-full rounded-2xl lg:flex lg:mx-auto justify-around py-16 lg:px-9 relative bottom-28 grid grid-cols-2 lg:gap-y-2 text-white">
+        <div className="single_counter text-center">
+          <div className="p-3">
+            <div className="text-5xl font-bold mb-3">{count1}+</div>
+            <h5 className="text-xl font-semibold">Elders Empowered</h5>
           </div>
-        ))}
+        </div>
+        <div className="single_counter text-center">
+          <div className="p-3">
+            <div className="text-5xl font-bold mb-3">Pan India</div>
+            <h5 className="text-xl font-semibold">Operated</h5>
+          </div>
+        </div>
+        <div className="single_counter text-center">
+          <div className="p-3">
+            <div className="text-5xl font-bold mb-3">{count3}+</div>
+            <h5 className="text-xl font-semibold">Lives Saved</h5>
+          </div>
+        </div>
+        <div className="single_counter text-center">
+          <div className="p-3">
+            <div className="text-5xl font-bold mb-3">{count4}+</div>
+            <h5 className="text-xl font-semibold">Events Organised</h5>
+          </div>
+        </div>
       </div>
     </>
   );

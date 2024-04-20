@@ -19,6 +19,7 @@ function App() {
       <Main />
 
       <Rounded />
+
       <HeroSection2 />
       <HeroSection3 />
       <HeroSection4 />

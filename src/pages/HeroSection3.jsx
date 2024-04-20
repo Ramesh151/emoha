@@ -24,12 +24,12 @@ const HeroSection3 = () => {
   ];
   return (
     <>
-      <div className="w-full bg-slate-100 flex flex-col ">
+      <div className="w-full bg-slate-100 flex flex-col rounded-2xl p-4 ">
         <div className=" flex  justify-around lg:my-14">
-          <h1 className=" text-4xl text-black font-medium ">
+          <h1 className=" lg:text-4xl text-xl py-3 px-4 text-black font-medium ">
             Get the care plan your parents need{" "}
           </h1>
-          <p className=" text-lg font-normal">
+          <p className=" lg:text-lg font-normal text-xl py-3 px-4">
             We have all their needs covered.
           </p>
         </div>

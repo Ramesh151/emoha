@@ -15,9 +15,6 @@ const Card = ({ imgpic, heading, subheading }) => {
           <button className=" bg-inherit text-white font-normal text-lg border px-2 py-1 rounded-full">
             {heading}
           </button>
-          {/* <button className="absolute top-0 bg-inherit text-white font-normal text-lg border px-2 py-1 rounded-full">
-            {heading}
-          </button> */}
         </div>
 
         <div className="relative p-6 px-6 py-14 md:px-12">

@@ -3,7 +3,7 @@ import React from "react";
 const Man = () => {
   return (
     <>
-      <div className="relative mt-4 rounded-xl lg:hidden">
+      <div className="relative mt-4 rounded-xl lg:hidden mb-10">
         <img
           className=" object-cover rounded-md lg:object-fill w-full "
           src="https://emoha.com/_next/image?url=%2Fstatic%2Fimages%2Fbanner1_mob.webp&w=640&q=75"
