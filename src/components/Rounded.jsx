@@ -47,25 +47,25 @@ const Rounded = () => {
       <div className="w-full lg:w-9/12 bg-red-700 lg:rounded-full rounded-2xl lg:flex lg:mx-auto justify-around py-16 lg:px-9 relative bottom-28 grid grid-cols-2 lg:gap-y-2 text-white">
         <div className="single_counter text-center">
           <div className="p-3">
-            <div className="text-5xl font-bold mb-3">{count1}+</div>
+            <div className="lg:text-5xl text-2xl font-bold mb-3">{count1}+</div>
             <h5 className="text-xl font-semibold">Elders Empowered</h5>
           </div>
         </div>
         <div className="single_counter text-center">
           <div className="p-3">
-            <div className="text-5xl font-bold mb-3">Pan India</div>
+            <div className="lg:text-5xl text-2xl font-bold mb-3">Pan India</div>
             <h5 className="text-xl font-semibold">Operated</h5>
           </div>
         </div>
         <div className="single_counter text-center">
           <div className="p-3">
-            <div className="text-5xl font-bold mb-3">{count3}+</div>
+            <div className="lg:text-5xl text-2xl font-bold mb-3">{count3}+</div>
             <h5 className="text-xl font-semibold">Lives Saved</h5>
           </div>
         </div>
         <div className="single_counter text-center">
           <div className="p-3">
-            <div className="text-5xl font-bold mb-3">{count4}+</div>
+            <div className="lg:text-5xl text-2xl font-bold mb-3">{count4}+</div>
             <h5 className="text-xl font-semibold">Events Organised</h5>
           </div>
         </div>
